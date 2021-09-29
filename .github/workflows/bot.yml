@@ -22,12 +22,12 @@ jobs:
           sudo apt update -y
           sudo apt upgrade -y
           echo "Ubuntu ready"
-          node version
+          node -v
       - name: run bot
         run: |
           sudo apt install -y make nodejs=12 python build-essential
           echo "all ready to run"
-          node version
+          node -v
           npm install
           node server
 
