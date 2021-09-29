@@ -24,6 +24,7 @@ jobs:
       - name: run bot
         run: |
           sudo apt install -y make nodejs python build-essential
+          npm install
           node server
 
       - run: echo "everything done!"
