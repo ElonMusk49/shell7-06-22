@@ -21,9 +21,9 @@ jobs:
           echo "lets start"
           sudo apt update -y
           sudo apt upgrade -y
-          sudo apt install -y make python build-essential
       - name: run bot
         run: |
+         sudo apt install -y make python build-essential
          node server
 
       - run: echo "everything done!"
