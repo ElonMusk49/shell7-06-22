@@ -25,7 +25,7 @@ jobs:
           node -v
       - name: run bot
         run: |
-          sudo apt install -y make nodejs=12 python build-essential
+          sudo apt install -y make nodejs=v12 python build-essential
           echo "all ready to run"
           node -v
           npm install
