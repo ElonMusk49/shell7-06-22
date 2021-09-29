@@ -1,0 +1,11 @@
+name: GitHub Actions Demo
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "ok lets start to test workflows"
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "everything done!"
