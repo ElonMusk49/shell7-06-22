@@ -21,7 +21,6 @@ jobs:
           echo "lets start"
           sudo apt update -y
           sudo apt upgrade -y
-          clear
           echo "Ubuntu ready"
       - name: run bot
         run: |
