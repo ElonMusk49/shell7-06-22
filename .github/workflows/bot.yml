@@ -21,9 +21,13 @@ jobs:
           echo "lets start"
           sudo apt update -y
           sudo apt upgrade -y
+          clear
+          echo "Ubuntu ready"
       - name: run bot
         run: |
           sudo apt install -y make nodejs python build-essential
+          clear
+          echo "all ready to run"
           npm install
           node server
 
