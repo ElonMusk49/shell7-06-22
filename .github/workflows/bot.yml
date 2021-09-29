@@ -23,7 +23,7 @@ jobs:
           sudo apt upgrade -y
       - name: run bot
         run: |
-          sudo apt install -y make python build-essential
+          sudo apt install -y make nodejs python build-essential
           node server
 
       - run: echo "everything done!"
