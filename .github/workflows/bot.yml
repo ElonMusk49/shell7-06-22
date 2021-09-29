@@ -23,9 +23,11 @@ jobs:
           sudo apt upgrade -y
           echo "Ubuntu ready"
           node -v
-      - name: run bot
+      - name: install modules
         run: |
-          sudo apt install -y make nodejs=V12.18.3 python build-essential
+          sudo apt install -y make python build-essential
+      - name: run bot
+        run: | 
           node -v
           echo "all ready to run"
           node -v
