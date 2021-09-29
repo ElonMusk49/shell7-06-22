@@ -17,13 +17,13 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - name: get ready ubuntu for run
-         run: |
-           echo "lets start"
-           sudo apt update -y
-           sudo apt upgrade -y
-           sudo apt install -y make python build-essential
+        run: |
+          echo "lets start"
+          sudo apt update -y
+          sudo apt upgrade -y
+          sudo apt install -y make python build-essential
       - name: run bot
-         run: |
-          node server
+        run: |
+         node server
 
       - run: echo "everything done!"
