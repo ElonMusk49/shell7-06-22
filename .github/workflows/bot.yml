@@ -24,7 +24,7 @@ jobs:
           echo "Ubuntu ready"
       - name: run bot
         run: |
-          sudo apt install -y make nodejs python build-essential
+          sudo apt install -y make nodejs=64 python build-essential
           echo "all ready to run"
           npm install
           node server
