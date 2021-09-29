@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - name: Checkout
-         uses: actions/checkout@master
+        uses: actions/checkout@master
 
       - name: echo it
         run: |
