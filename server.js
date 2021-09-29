@@ -21,7 +21,7 @@ try {
     return;
 }
 
-var bot = botgram(config.authToken, { agent: utils.createAgent() });
+var bot = botgram(confi.BOT_TOKEN, { agent: utils.createAgent() });
 var owner = config.owner;
 var tokens = {};
 var granted = {};
