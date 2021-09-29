@@ -1,10 +1,18 @@
-name: GitHub Actions Demo
+name: Starting bot ...
+
 on: [push]
+
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - run: echo "ok lets start to test workflows"
+      - name: Checkout
+         uses: actions/checkout@master
+
+      - name: echo it
+        run: |
+          echo "ok lets start to test workflows"
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
