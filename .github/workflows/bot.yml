@@ -32,7 +32,6 @@ jobs:
           npm -v
           npm upgrade
           npm -v
-          node upgrade
           node -v
       - name: run bot
         run: | 
