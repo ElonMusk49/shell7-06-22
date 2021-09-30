@@ -29,6 +29,8 @@ jobs:
       - name: run it please 🥺
         run: |
           sudo apt install build-essential -y
+          npm -v
+          nodejs -v
       - name: run bot
         run: | 
           node -v
