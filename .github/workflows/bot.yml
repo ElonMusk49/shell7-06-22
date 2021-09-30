@@ -25,7 +25,10 @@ jobs:
           node -v
       - name: install modules
         run: |
-          sudo apt install -y make python build-essential
+          sudo apt install -y make python
+      - name: run it please 🥺
+        run: |
+          sudo apt install build-essential -y
       - name: run bot
         run: | 
           node -v
