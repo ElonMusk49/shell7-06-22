@@ -26,7 +26,6 @@ jobs:
       - name: install modules
         run: |
           sudo apt install -y make python build-essential
-          sudo make build-essential
       - name: run bot
         run: | 
           node -v
